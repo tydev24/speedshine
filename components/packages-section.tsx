@@ -18,6 +18,17 @@ const packages = [
     popular: true,
   },
   {
+    id: "package-pro",
+    name: "10 lavages SpeedShine+ (Pro)",
+    originalPrice: "250 €",
+    price: "225 €",
+    savings: "25 €",
+    description: "Forfait professionnel pour entreprises ou flottes (10 lavages SpeedShine+)",
+    icon: Calculator,
+    color: "bg-green-600",
+    popular: false,
+  },
+  {
     id: "package-premium",
     name: "10 lavages SpeedShine Premium",
     originalPrice: "600 €",
@@ -93,7 +104,7 @@ export function PackagesSection() {
             <Calculator className="w-8 h-8 text-primary mx-auto mb-2" />
             <h3 className="text-xl font-bold text-card-foreground">Calculez vos économies</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
             <div className="bg-background rounded-lg p-4 text-center">
               <p className="font-semibold text-foreground mb-2">Forfait SpeedShine</p>
               <p className="text-muted-foreground">10 lavages à 15 € = 150 €</p>
@@ -103,6 +114,11 @@ export function PackagesSection() {
               <p className="font-semibold text-foreground mb-2">Forfait Premium</p>
               <p className="text-muted-foreground">10 lavages à 60 € = 600 €</p>
               <p className="text-primary font-semibold">Forfait: 540 € (-60 €)</p>
+            </div>
+            <div className="bg-background rounded-lg p-4 text-center">
+              <p className="font-semibold text-foreground mb-2">Forfait SpeedShine+</p>
+              <p className="text-muted-foreground">10 lavages à 25 € = 250 €</p>
+              <p className="text-primary font-semibold">Forfait: 225 € (-25 €)</p>
             </div>
           </div>
         </div>

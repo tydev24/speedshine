@@ -44,97 +44,11 @@ Message: ${formData.message}`
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance">Nous contacter</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-pretty">
-            Prenez rendez-vous facilement ou contactez-nous pour toute demande d'information. Notre équipe
-            professionnelle est à votre service.
+            Contactez-nous ou prenez rendez-vous en quelques clics. Nous restons à votre écoute pour toute question.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <Card className="border-2">
-              <CardHeader className="pb-4">
-                <CardTitle className="flex items-center space-x-3 text-xl">
-                  <MapPin className="w-6 h-6 text-primary" />
-                  <span>Notre établissement</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <p className="text-muted-foreground text-lg">
-                    154 Allée des Érables
-                    <br />
-                    93420 Villepinte
-                  </p>
-                  <Button
-                    variant="outline"
-                    className="mt-4 bg-transparent"
-                    onClick={() =>
-                      window.open("https://maps.google.com/?q=154+Allée+des+Érables,+93420+Villepinte", "_blank")
-                    }
-                  >
-                    Voir l'itinéraire
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2">
-              <CardHeader className="pb-4">
-                <CardTitle className="flex items-center space-x-3 text-xl">
-                  <Phone className="w-6 h-6 text-primary" />
-                  <span>Contact direct</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-6 text-lg">07 67 63 78 40</p>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <Button
-                    onClick={() => window.open("tel:0767637840", "_self")}
-                    className="flex items-center space-x-2"
-                  >
-                    <Phone className="w-4 h-4" />
-                    <span>Appeler maintenant</span>
-                  </Button>
-                  <Button
-                    variant="outline"
-                    onClick={() => window.open("https://wa.me/33767637840", "_blank")}
-                    className="flex items-center space-x-2"
-                  >
-                    <MessageCircle className="w-4 h-4" />
-                    <span>WhatsApp</span>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2">
-              <CardHeader className="pb-4">
-                <CardTitle className="flex items-center space-x-3 text-xl">
-                  <Clock className="w-6 h-6 text-primary" />
-                  <span>Horaires d'ouverture</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4 text-lg">
-                  <div className="flex justify-between items-center">
-                    <span className="font-medium">Lundi - Samedi</span>
-                    <span className="text-muted-foreground">8h30 - 19h00</span>
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <span className="font-medium">Dimanche</span>
-                    <span className="text-destructive font-medium">Fermé</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground mt-4 p-3 bg-muted/50 rounded-lg">
-                    Intervention possible avec ou sans rendez-vous. Nous recommandons de réserver pour garantir votre
-                    créneau.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Contact Form */}
+        <div className="max-w-3xl mx-auto">
           <Card className="border-2">
             <CardHeader className="pb-6">
               <CardTitle className="flex items-center space-x-3 text-2xl">
